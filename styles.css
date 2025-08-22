@@ -7,7 +7,15 @@ body {
   color: #333;
   line-height: 1.5;
 }
-
+:root {
+  --brand-navy: #0E2235;   /* header & table head background */
+  --brand-mint: #7AD7C0;   /* accents/buttons/links */
+  --brand-ivory: #F3F6F7;  /* light text on dark bg */
+  --ink: #1E293B;          /* main body text on light bg */
+  --bg: #F7F8FA;           /* page background */
+  --row-alt: #F2F4F6;      /* zebra rows */
+  --row-hover: #EDF9F5;    /* subtle hover with mint hint */
+}
 header {
   background-color: #faf7f0;
   border-bottom: 2px solid #e7e0d8;
