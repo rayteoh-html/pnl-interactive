@@ -1,0 +1,121 @@
+/* Base styles for the interactive P&L sample */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #faf7f0;
+  border-bottom: 2px solid #e7e0d8;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #0e675a; /* dark teal for contrast */
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: #0e675a;
+}
+
+.level {
+  margin-bottom: 2rem;
+}
+
+/* Table styles */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.data-table thead {
+  background-color: #0e675a;
+  color: #fff;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+/* Zebra stripes for improved readability */
+.data-table tbody tr:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+/* Hover effect on rows */
+.data-table tbody tr:hover {
+  background-color: #fbeedb;
+  cursor: pointer;
+}
+
+/* Indent for subcategory names */
+.data-table tbody tr.subcategory td:first-child {
+  padding-left: 2rem;
+  font-style: italic;
+}
+
+.data-table tbody tr td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Two-column layout for invoices and ledger entries */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.two-column > div {
+  flex: 1 1 300px;
+}
+
+/* Back buttons */
+.back-button {
+  background-color: #d4af37; /* gold tone */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.back-button:hover {
+  background-color: #b48c2e;
+}
+
+footer {
+  background-color: #faf7f0;
+  color: #666;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #e7e0d8;
+}

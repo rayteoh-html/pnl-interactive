@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive P&L Sample</title>
+    <!-- Link to custom stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Interactive Profit &amp; Loss Report</h1>
+      <p>
+        This sample demonstrates how you can drill down from high‑level
+        financial categories to individual invoices and ledger entries. Click
+        on a category total to expand subcategories, and click on a
+        subcategory total to view the invoices and ledger lines that make up
+        that balance.
+      </p>
+    </header>
+
+    <main>
+      <!-- Unified P&L table. Clicking a category row expands subcategories below it. -->
+      <h2>P&amp;L Statement</h2>
+      <table id="pnlTable" class="data-table">
+        <thead>
+          <tr>
+            <th>Category / Subcategory</th>
+            <th>Total (£)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <!-- Invoice & ledger level details panel -->
+      <section class="level" id="details-panel" hidden>
+        <h2 id="details-header">Details</h2>
+        <button class="back-button" id="hide-details">← Hide Details</button>
+        <div class="two-column">
+          <div>
+            <h3>Invoices</h3>
+            <table id="invoiceTable" class="data-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Invoice No</th>
+                  <th>Customer/Vendor</th>
+                  <th>Description</th>
+                  <th>Amount (£)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div>
+            <h3>Ledger Entries</h3>
+            <table id="ledgerTable" class="data-table">
+              <thead>
+                <tr>
+                  <th>Account</th>
+                  <th>Description</th>
+                  <th>Amount (£)</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Note: The figures and invoice details shown here are purely
+        illustrative. They do not reflect real business data.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
